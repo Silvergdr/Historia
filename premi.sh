@@ -311,8 +311,8 @@ clear
 clear
 #GANTI PASSWORD DEFAULT
 restart_system() {
-    USRSC=$(wget -qO- https://raw.githubusercontent.com/freetunnel/izin/main/ip | grep $ipsaya | awk '{print $2}')
-    EXPSC=$(wget -qO- https://raw.githubusercontent.com/freetunnel/izin/main/ip | grep $ipsaya | awk '{print $3}')
+    USRSC=$(wget -qO- https://raw.githubusercontent.com/Silvergdr/izin/main/ip | grep $ipsaya | awk '{print $2}')
+    EXPSC=$(wget -qO- https://raw.githubusercontent.com/Silvergdr/izin/main/ip | grep $ipsaya | awk '{print $3}')
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
 <code>────────────────────</code>
@@ -532,7 +532,7 @@ print_success "Password SSH"
 function udp_mini(){
 clear
 print_install "Memasang Service Limit Quota"
-wget raw.githubusercontent.com/freetunnel/ftp/main/limit/limit.sh && chmod +x limit.sh && ./limit.sh
+wget https://raw.githubusercontent.com/Silvergdr/Historia/main/limit/limit.sh && chmod +x limit.sh && ./limit.sh
 
 cd
 wget -q -O /usr/bin/limit-ip "${REPO}limit/limit-ip"
