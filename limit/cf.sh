@@ -1,10 +1,10 @@
 #!/bin/bash
 MYIP=$(wget -qO- icanhazip.com);
 apt install jq curl -y
-#read -p "Masukan Domain (contoh : memek7)" domen
+read -p "Masukan Domain (contoh : memei7)" domen
 DOMAIN=awibu.my.id
-#sub=${domen}
-sub=$(</dev/urandom tr -dc a-z | head -c4)
+sub=${domen}
+#sub=$(</dev/urandom tr -dc a-z | head -c4)
 #(</dev/urandom tr -dc a-z0-9 | head -c5)
 dns=${sub}.awibu.my.id
 CF_ID=silvercyber1996@gmail.com
