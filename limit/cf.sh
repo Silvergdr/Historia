@@ -7,7 +7,7 @@ sub=${domen}
 #sub=$(</dev/urandom tr -dc a-z | head -c4)
 #(</dev/urandom tr -dc a-z0-9 | head -c5)
 dns=${sub}.awibu.my.id
-CF_ID=silvercyber1996@gmail.com
+CF_ID=Silvercyber1996@gmail.com
 CF_KEY=8cbad7474e818c740eccc1666bc83e52755e6
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
